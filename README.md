@@ -4,7 +4,7 @@ Ejemplo de un lector de tarjetas RFID que activa un relay usando una Raspberry P
 ## Depdendencias ##
 Las siguientes dependencias son necesarias para que el programa funcione correctamente:
 
-* Libreria SPI-Py https://github.com/lthiery/SPI-Py
+* Librería SPI-Py https://github.com/lthiery/SPI-Py
 
   Clonar o descargar el repositorio, cambiarse al directorio donde esta la librería e instalar con 
 
@@ -14,13 +14,13 @@ Las siguientes dependencias son necesarias para que el programa funcione correct
 
   Clonar o descargar el repositorio y luego copiar la librería MFRC522.py en la carpeta de nuestro proyecto.
 
-## Instalacion ##
-El programa lee desde una base de datos el identificador de la tarjeta RFID, por lo cual se debe instalar MySQL.
+## Instalación ##
+El programa lee desde una base de datos el identificador de la tarjeta RFID, por lo cual se debe instalar previamente el motor de base de datos MySQL.
 
 Luego se debe crear la base de datos raspberrypi y cargar la tabla tarjeta a partir del script sql que esta dentro de la carpeta sql en este repositorio.
 
 ## Ejecutar ##
-Para ejecutar el programa python lectorRFID  se debe usar sudo ya que se necesitan privilegios de super usario para acceder a los puertos GPIO.
+Para ejecutar el programa python lectorRFID.py se debe usar sudo ya que se necesitan privilegios de super usario para acceder a los puertos GPIO.
 
 sudo python lectorRFID.py
 
