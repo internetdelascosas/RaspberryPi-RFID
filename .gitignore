@@ -1,4 +1,4 @@
 *.pyc
 .*.swp
-config.local.py
-
+config_local.py
+MFRC522.py
