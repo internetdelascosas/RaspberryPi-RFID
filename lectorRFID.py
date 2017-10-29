@@ -6,7 +6,7 @@
 # Lenguaje     : Python
 # Autor        : Jose Zorrilla <jzorrilla@iot.cl>
 # Dependencias : Libreria SPI-Py https://github.com/lthiery/SPI-Py
-#				 Libreria MFRC522-python https://github.com/mxgxw/MFRC522-python
+#		 Libreria MFRC522-python https://github.com/mxgxw/MFRC522-python
 # Web          : http://internetdelascosas.cl/
 
 # Importa las librerias necesarias para el lector RFID
@@ -63,7 +63,7 @@ def main():
 								passwd=MYSQL_CONTRASENA,
 								db=MYSQL_BD)
 
-			# Crea un cursos usando la conexion
+			# Crea un cursor usando la conexion
 			cursor = db.cursor()
 
 			sql = "SELECT * FROM lectorRFID WHERE uid='" + card_id + "'"
