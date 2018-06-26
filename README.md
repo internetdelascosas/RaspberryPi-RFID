@@ -19,6 +19,19 @@ El programa lee desde una base de datos el identificador de la tarjeta RFID, por
 
 Luego se debe crear la base de datos raspberrypi y cargar la tabla tarjeta a partir del script sql que esta dentro de la carpeta sql en este repositorio.
 
+## Configuración ##
+
+Para configurar el programa se debe crear el archivo config_local.py, cuyo contenido debe ser
+
+```
+MYSQL_SERVIDOR = "localhost"
+MYSQL_BD = "raspberrypi"
+MYSQL_USUARIO = "raspberrypi"
+MYSQL_CONTRASENA = "contrasena_super_secreta"
+```
+
+Este archivo sobre escribe la configuración y se debe reemplazar por los valores que usas en tu proyecto, al estar este archivo dentro del gitignore, es ignorado por git y no es sincronizado con el directorio, protegiendo asi tus configuraciones y en especial tu contraseña.
+
 ## Ejecutar ##
 Para ejecutar el programa python lectorRFID.py se debe usar sudo ya que se necesitan privilegios de super usario para acceder a los puertos GPIO.
 
